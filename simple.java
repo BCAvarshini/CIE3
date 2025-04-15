@@ -1,7 +1,22 @@
-package java;
 
-public class simple {
+import java.util.Scanner;
+
+public class simple1 {
+
     public static void main(String[] args) {
-        System.out.println("Hello, World!"); 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        double number = scanner.nextDouble();
+
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else if (number < 0) {
+            System.out.println("The number is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+
+        scanner.close();
     }
 }
